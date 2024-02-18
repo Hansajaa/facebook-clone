@@ -39,6 +39,7 @@ export default function Login() {
           </div>
         </form>
       </div>
+      <p id="msg"><a><b>Create a Page </b></a>for a celebrity, brand or business.</p>
     </div>
   );
 }
