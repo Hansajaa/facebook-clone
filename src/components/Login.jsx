@@ -1,44 +1,44 @@
-import './Login.css'
+import "./Login.css";
 
 export default function Login() {
   return (
-    <div className="container w-60 mt-5 login-component">
+    <div className="login-form">
+      <div className="container w-100 login-component">
         <form>
-          <div class="form-floating">
+          <div className="form-floating">
             <input
               type="email"
-              class="form-control"
+              className="form-control"
               id="floatingInput"
               placeholder="name@example.com"
             />
-            <label for="floatingInput">Email address</label>
+            <label for="floatingInput">Email address or Phone Number</label>
           </div>
-          <div class="form-floating mt-3">
+          <div className="form-floating mt-3 mb-3">
             <input
               type="password"
-              class="form-control"
+              className="form-control"
               id="floatingPassword"
               placeholder="Password"
             />
             <label for="floatingPassword">Password</label>
           </div>
-
-          <div class="form-check text-start my-3">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              value="remember-me"
-              id="flexCheckDefault"
-            />
-            <label class="form-check-label" for="flexCheckDefault">
-              Remember me
-            </label>
-          </div>
-          <button class="btn btn-primary w-100 py-2" type="submit">
-            Sign in
+          <button className="btn btn-primary w-100 py-2 mb-4" type="submit">
+            <b>Login</b>
           </button>
-          <p class="mt-5 mb-3 text-body-secondary">&copy; 2017–2023</p>
+          <a id="forgotten-password" className="mb-3">
+            Forgotten password?
+          </a>
+          <div className="mt-4">
+            <hr />
+          </div>
+          <div>
+            <button id="button1" className="btn w-50 py-2" type="submit">
+              <b>Create New Account</b>
+            </button>
+          </div>
         </form>
+      </div>
     </div>
   );
 }
