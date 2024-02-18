@@ -26,7 +26,7 @@ export default function Login() {
           <button className="btn btn-primary w-100 py-2 mb-4" type="submit">
             <b>Login</b>
           </button>
-          <a id="forgotten-password" className="mb-3">
+          <a href="www.facebook.com" id="forgotten-password" className="mb-3">
             Forgotten password?
           </a>
           <div className="mt-4">
@@ -39,7 +39,7 @@ export default function Login() {
           </div>
         </form>
       </div>
-      <p id="msg"><a><b>Create a Page </b></a>for a celebrity, brand or business.</p>
+      <p id="msg"><a id="msg-link" href="www.facebook.com"><b>Create a Page </b></a>for a celebrity, brand or business.</p>
     </div>
   );
 }
